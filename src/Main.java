@@ -6,5 +6,6 @@ public class Main {
         System.out.println("den her kommentar undersøger merge konlfikter");
         System.out.println("change");
         System.out.println("linje 8");
+        System.out.println(" Led os lige se hvad der sker !");
     }
 }
