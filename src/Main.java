@@ -1,11 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hej med dig");
-        System.out.println("Hej med mig også ");
-        System.out.println("den her kommentar undersøger merge konlfikter");
-        System.out.println("change");
-        System.out.println("linje 8");
-        System.out.println(" Led os lige se hvad der sker !");
+        int t = 5 ;
+        if( t < 5 ){
+            System.out.println(" Hej ");
+
+        }
+        else{
+            System.out.println(" Hej hej");
+        }
     }
 }
