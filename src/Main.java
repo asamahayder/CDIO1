@@ -1,18 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-       int i =0;
-       while (i <10){
-           System.out.println(i);
-           i++;
-       }
-        int t = 5 ;
-        if( t < 5 ){
-            System.out.println(" Hej ");
+        System.out.println("hej med dig");
+        System.out.println("Hej med mig også ");
+        System.out.println("den her kommentar undersøger merge konlfikter");
 
-        }
-        else{
-            System.out.println(" Hej hej");
-        }
     }
 }
