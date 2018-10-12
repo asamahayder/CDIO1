@@ -32,9 +32,4 @@ public class Player {
         this.point = 0;
         return this.point;
     }
-
-    //Hænger sammen med når en spiller slår et par og ligger de nye point til spilleren der har slået et par
-    public void uselastPoint(int point) {
-        this.getlastPoint = point;
-    }
 }

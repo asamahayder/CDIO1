@@ -10,7 +10,7 @@ public class Game {
         boolean Gameturn = true;
 
         //Sætter de point som en af spillerne skal have for at vinde
-        int finalpoint = 39;
+        int finalpoint = 40;
 
         System.out.println("Indtast navn på spiller 1");
         String player1 = use.nextLine();
@@ -29,7 +29,7 @@ public class Game {
         Dice dice2 = new Dice();
 
         //Starter et while loop der fortæller mens mindst en af spillernes samlede point er under "finalpoint" skal den køre dette loop
-        while (p1.getPoint() <= finalpoint && p2.getPoint() <= finalpoint) {
+        while (p1.getPoint() < finalpoint && p2.getPoint() < finalpoint) {
 
             //Laver funktionen der fortæller brugeren at de skal indtaste værdien "kast" for at fortsætte for enten den ene eller anden spiller
             if (Gameturn == true) {
@@ -71,7 +71,6 @@ public class Game {
                     } else if (Gameturn == true && dice1.getFace() == dice2.getFace()) {
                         System.out.println(p1.getName() + " slog et par " + dice1.getFace() + "'ere & får den samlede sum " + sum + " og får en ny tur");
                         p1.addPoint(sum);
-                        p1.uselastPoint(sum);
                         Gameturn = true;
 
                         //Tilføjer de nye ternings point til spiller 2's score
@@ -84,7 +83,6 @@ public class Game {
                     } else if (Gameturn == false && dice1.getFace() == dice2.getFace()) {
                         System.out.println(p2.getName() + " slog et par " + dice1.getFace() + "'ere & får en samlede sum " + sum);
                         p2.addPoint(sum);
-                        p2.uselastPoint(sum);
                         Gameturn = false;
                     }
                 }

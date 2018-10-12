@@ -1,7 +1,8 @@
+
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TerningTest {
+public class DiceTest {
 
     @Test
     public void roll() {
@@ -12,7 +13,7 @@ public class TerningTest {
         for (int i = 0; i <= 20000; ++i) {
 
             dice1.roll();
-            dice1.roll();
+            dice2.roll();
             int number = dice1.getFace() + dice2.getFace();
 
             Assert.assertTrue(number > 1 && number < 13);
