@@ -273,7 +273,7 @@ public class Game {
                                 p1.addPoint(180);
                                 Gameturn = false;
                                 break;
-
+    
                             case 7:
                                 System.out.println(p1.getName() + " slog en " + dice1.getFace() + "'er & en " + dice2.getFace() + "'er og tilsammenlagt " + sum + ". " + p1.getName() + " er landet på feltet Monastery og trods en god en indsats får ingen point.");
                                 p1.addPoint(0);
