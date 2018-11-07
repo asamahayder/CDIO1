@@ -4,9 +4,7 @@ public class Player {
     private String name;
 
     //Opretter int
-    private int point;
-
-    public int getlastPoint;
+    private int point = 1000;
 
     //Tilføjer spiller navnet
     public Player(String name) {
